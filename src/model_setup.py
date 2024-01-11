@@ -16,7 +16,12 @@ class ModelSetup:
             embedding_model_repo_id = "sentence-transformers/all-roberta-large-v1"
         elif self.embedding_model == "all-mpnet-base-v2_768d":
             embedding_model_repo_id = "sentence-transformers/all-mpnet-base-v2"
+        elif self.embedding_model =="bge-large-en-v1.5":
+            embedding_model_repo_id = "BAAI/bge-large-en-v1.5"
+        elif self.embedding_model =="Llama-2-7b-chat-hf":
+            embedding_model_repo_id = "meta-llama/Llama-2-7b-chat-hf"
 
+        
 
         if self.llm == "Llamav2-7B-Chat":
             llm_repo_id = "meta-llama/Llama-2-7b-chat-hf"

@@ -79,6 +79,7 @@ class Conversation_RAG:
             retriever=vectordb.as_retriever(search_kwargs={"k": k_context}),
             combine_docs_chain_kwargs={"prompt": QCA_PROMPT},
             get_chat_history=lambda h: h,
+            return_source_documents=True,
             verbose=True
         )
         return qa
